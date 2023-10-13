@@ -64,6 +64,7 @@ header .menu li:not(:last-of-type):hover a::after{
 .hamburger-menu{
     width: 2rem;
     height: 2rem;
+    display: none;
 }
 .hamburger-menu .bar{
     width: 100%;
@@ -463,6 +464,9 @@ footer .footer-bottom .socials{
 
     .container{
         padding: 2rem 2rem;
+    }
+    .hamburger-menu{
+        display: block;
     }
     .hero .right h1{
         font-size: 8rem;
