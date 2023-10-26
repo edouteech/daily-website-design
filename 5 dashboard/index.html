@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <aside class="sidebar">
+                <div class="blocs">
+                    <div class="logo">
+                        <img src="icon.png" alt="">
+                        <h3>Coinspace</h3>
+                    </div>
+                    <div class="item">
+                        <h3 class="title">Quick Access</h3>
+                        <ul class="menu">
+                            <li class="menu-item active">
+                                <a href="#"> <i class="fas fa-home"></i> Dashboard </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#"> <i class="fas fa-sync"></i> Exchange </a>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="#"><i class="fas fa-wallet"></i> My Wallet</i>
+                                </a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#"> <i class="fas fa-chart-line"></i> Tradeview </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3 class="title">Service</h3>
+                        <ul class="menu">
+                            <li class="menu-item dropdown">
+                                <a href="#"> <i class="fas fa-exchange-alt"></i> Transactions </a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="#">Buy & Sell Coin</a></li>
+                                    <li class="submenu-item"><a href="#">Deposit Yen</a></li>
+                                    <li class="submenu-item"><a href="#">Withdraw Yen</a></li>
+                                    <li class="submenu-item"><a href="#">Send Coin</a></li>
+                                    <li class="submenu-item"><a href="#">Receive Coin</a></li>
+                                    <li class="submenu-item"><a href="#">Deposit Coin</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="#"> <i class="fas fa-gift"></i> Rewards </a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item dropdown">
+                                <a href="#"><i class="far fa-lightbulb"></i> Utility Plan</a>
+                                <ul class="submenu">
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                    <li class="submenu-item"><a href="#">Sub Link</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <h3 class="title">Account</h3>
+                        <ul class="menu">
+                            <li class="menu-item">
+                                <a href="#"> <i class="fas fa-bell"></i> Notifications </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#"> <i class="fas fa-cog"></i> Settings </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#"> <i class="far fa-question-circle"></i> FAQ </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="logout">
+                    <a href="#"> <i class="fas fa-sign-out-alt"></i> Log Out </a>
+                </div>
+            </aside>
+            <main>
+                <header>
+                    <div class="left">
+                        <ul class="menu">
+                            <li class="item"><i class="fas fa-bars"></i></li>
+                            <li class="item"><i class="fas fa-cube"></i></li>
+                            <li class="item">
+                                <div class="search">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" placeholder="Type any cryptocurrency...">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <ul class="menu">
+                            <li class="item avatar">
+                                <!-- <div class=""> -->
+                                    <img src="user.png" alt="" srcset="">
+                                <!-- </div> -->
+                            </li>
+                            <li class="item">
+                                <i class="fas fa-cog"></i>
+                            </li>
+                            <li class="item">
+                                <i class="fas fa-bell"></i>
+                                <span class="badge">3</span>
+                            </li>
+                            <li class="item">
+                                <i class="flag-icon flag-icon-us"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div class="breadcumb">
+                    <ul class="breadcumb-list">
+                        <li><a href="#"><i class="fas fa-caret-right"></i> </a></li>
+                        <li><a href="#">Welcome <i class="fas fa-caret-right"></i> </a></li>
+                        <li><a class="active" href="#">Dashboard <i class="fas fa-caret-right"></i></a></li>
+                    </ul>
+                </div>
+                <div class="content">
+                    <div class="ministat">
+                        <div class="item">
+                            <div class="top">
+                                <div class="left">
+                                    <img src="img/btc.png" alt="">
+                                    <div class="name">
+                                        <h4>BTC</h4>
+                                        <p>Bitcoin</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <h4>¥ 721,882   </h4>
+                                    <p class="down">-4.66%  <i class="fas fa-arrow-down"></i></p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                chart
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="top">
+                                <div class="left">
+                                    <img src="img/eth.png" alt="">
+                                    <div class="name">
+                                        <h4>ETH</h4>
+                                        <p>Etherum</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <h4>¥ 22,370   </h4>
+                                    <p class="up">+0.45% <i class="fas fa-arrow-up"></i></p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                chart
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="top">
+                                <div class="left">
+                                    <img src="img/xem.png" alt="">
+                                    <div class="name">
+                                        <h4>XEM</h4>
+                                        <p>NEM</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <h4>¥ 10.604   </h4>
+                                    <p class="down">-1.07% <i class="fas fa-arrow-down"></i></p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                chart
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="top">
+                                <div class="left">
+                                    <img src="img/xrp.png" alt="">
+                                    <div class="name">
+                                        <h4>XRP</h4>
+                                        <p>Ripple</p>
+                                    </div>
+                                </div>
+                                <div class="right">
+                                    <h4>¥ 50.839</h4>
+                                    <p class="up">+0.66% <i class="fas fa-arrow-up"></i></p>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                chart
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bigstat">
+                        <div class="charts">
+                            <div class="header">
+                                <div class="">
+                                    <h3>BTC</h3>
+                                    <p>/JPY <i class="fas fa-angle-down"></i></p>
+                                </div>
+                                <a href="">BUY</a>
+                            </div>
+                            <div class="sub-header">
+                                <div class="one">
+                                    <h2>721,882</h2>
+                                    <p>-4.66%  <i class="fas fa-arrow-down"></i></p>
+                                </div>
+                                <div class="datas">
+                                    <p>High</p>
+                                    <h4>725,974</h4>
+                                    <p>Low</p>
+                                    <h4>718,000</h4>
+                                    <p>24h Volume</p>
+                                    <h4>677.7 BTC</h4>
+                                </div>
+                                <div class="alert">
+                                    <a href="">Price Alert <i class="fas fa-bell"></i></a>
+                                </div>
+                            </div>
+                            <div class="chart">
+                                chart
+                            </div>
+                        </div>
+                        <div class="marketcap">
+                            <div class="header">
+                                <h3>Market Cap</h3>
+                                <i class="fas fa-sort"></i>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/btc.png" alt="">
+                                        <h4>BTC</h4>
+                                    </div>
+                                    <div class="right">
+                                        <h4>¥ 721,882</h4>
+                                        <p class="down">-4.66% <i class="fas fa-arrow-down"></i></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/bnb.png" alt="">
+                                        <h4>BNB</h4>
+                                    </div>
+                                    <div class="right">
+                                        <h4>¥ 89,882</h4>
+                                        <p class="up">+0.78% <i class="fas fa-arrow-up"></i></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/dash.png" alt="">
+                                        <h4>DASH</h4>
+                                    </div>
+                                    <div class="right">
+                                        <h4>¥ 21,882</h4>
+                                        <p class="up">+2.60% <i class="fas fa-arrow-up"></i></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/eth.png" alt="">
+                                        <h4>ETH</h4>
+                                    </div>
+                                    <div class="right">
+                                        <h4>¥ 121,882</h4>
+                                        <p class="down">-1.66% <i class="fas fa-arrow-down"></i></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/xrp.png" alt="">
+                                        <h4>XRP</h4>
+                                    </div>
+                                    <div class="right">
+                                        <h4>¥ 51,882</h4>
+                                        <p class="up">+.66% <i class="fas fa-arrow-up"></i></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/btc.png" alt="">
+                                        <h4>BTC</h4>
+                                    </div>
+                                    <div class="right">
+                                        <h4>¥ 721,882</h4>
+                                        <p class="down">-4.66% <i class="fas fa-arrow-down"></i></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/mon.png" alt="">
+                                        <h4>MON</h4>
+                                    </div>
+                                    <div class="right">
+                                        <h4>¥ 5,882</h4>
+                                        <p class="up">+3.89% <i class="fas fa-arrow-up"></i></p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="left">
+                                        <img src="img/btc.png" alt="">
+                                        <h4>BTC</h4>
+                                    </div>
+                                    <div class="right">
+                                        <h4>¥ 721,882</h4>
+                                        <p class="down">-4.66% <i class="fas fa-arrow-down"></i></p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="other">
+                        <div class="activities">
+                            <div class="head">
+                                <h2>
+                                    Latest Activities
+                                </h2>
+                                <ul>
+                                    <li class="active">ALL</li>
+                                    <li>BTC</li>
+                                    <li>ETH</li>
+                                    <li>XRP</li>
+                                    <li>XEM</li>
+                                    <li>LSK</li>
+                                    <li>BTH</li>
+                                    <li>FCT</li>
+                                    <li>ETC</li>
+                                    <li>JPY</li>
+                                </ul>
+                            </div>
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Date</th>
+                                        <th>Detail</th>
+                                        <th>Price</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2018/10/02 10:57:46</td>
+                                        <td>Deposit Japanese Yen</td>
+                                        <td>+10,000 JPY</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="newsfeed">
+                            <div class="head">
+                                <h2>Crypto Newsfeed</h2>
+                                <a href="">Suscribe</a>
+                            </div>
+                            <div class="news">
+                                <div class="text">
+                                    <h5 class="date">
+                                        Today   11:36
+                                    </h5>
+                                    <p>
+                                        Beyond Bad Trades: Cybersecurity Risks to Cryptocurrency Exchange Users
+                                    </p>
+                                    <span>
+                                        Cryptocurrency-mining malware is not the only type of cryptocurrency-related threat — cybercriminals have resorted…
+                                    </span>
+                                </div>
+                                <strong class="tag">Security</strong>
+                            </div>
+                            <div class="news">
+                                <div class="text">
+                                    <h5 class="date">
+                                        Today   11:36
+                                    </h5>
+                                    <p>
+                                        Beyond Bad Trades: Cybersecurity Risks to Cryptocurrency Exchange Users
+                                    </p>
+                                    <span>
+                                        Cryptocurrency-mining malware is not the only type of cryptocurrency-related threat — cybercriminals have resorted…
+                                    </span>
+                                </div>
+                                <strong class="tag">Security</strong>
+                            </div>
+                            <div class="news">
+                                <div class="text">
+                                    <h5 class="date">
+                                        Today   11:36
+                                    </h5>
+                                    <p>
+                                        Beyond Bad Trades: Cybersecurity Risks to Cryptocurrency Exchange Users
+                                    </p>
+                                    <span>
+                                        Cryptocurrency-mining malware is not the only type of cryptocurrency-related threat — cybercriminals have resorted…
+                                    </span>
+                                </div>
+                                <strong class="tag">Security</strong>
+                            </div>
+                            <div class="news">
+                                <div class="text">
+                                    <h5 class="date">
+                                        Today   11:36
+                                    </h5>
+                                    <p>
+                                        Beyond Bad Trades: Cybersecurity Risks to Cryptocurrency Exchange Users
+                                    </p>
+                                    <span>
+                                        Cryptocurrency-mining malware is not the only type of cryptocurrency-related threat — cybercriminals have resorted…
+                                    </span>
+                                </div>
+                                <strong class="tag">Security</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>

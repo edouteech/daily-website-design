@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+    
+}
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: 'Oxygen', sans-serif;
+}
+
+p.down{
+    color: #b91c1c;
+    font-size: 0.8rem;
+}
+p.up{
+    color: #16a34a;
+    font-size: 0.8rem;
+}
+
+.wrapper{
+    display: flex;
+
+}
+/* sidebar */
+.sidebar{
+    width: 218px;
+    height: 100vh;
+    background-color: #1f263e;
+    color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar .logo{
+    display: flex;
+    align-items: center;
+    padding: .5rem 1rem;
+    border-bottom: .1px solid #9d9d9e;
+}
+.sidebar .logo h3{
+    margin-left: .4rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+.sidebar .blocs {
+    
+}
+.sidebar .title{
+    padding: .7rem 1rem;
+}
+.sidebar .menu .menu-item{
+    padding: .5rem 1rem;
+    position: relative;
+    transition: .5s;
+}
+.sidebar .menu .menu-item::before{
+    transition: .5s;
+}
+.sidebar .menu .menu-item:hover, .sidebar .menu .menu-item.active{
+    background-color: #303750;
+}
+.sidebar .menu .menu-item:hover::before, .sidebar .menu .menu-item.active::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 2.3rem;
+    width: 3px;
+    background-color: #50b8e4;
+}
+
+.sidebar .menu .menu-item.dropdown{
+    position: relative;
+}
+.sidebar .menu .menu-item.dropdown > a::before{
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 5px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
+}
+.sidebar .menu .menu-item.dropdown ul{
+    display: none;
+    transition: .5s;
+}
+.sidebar .menu .menu-item.dropdown ul li{
+    padding: .5rem 1rem;
+    transition: .5s;
+    font-weight: 300;
+}
+.sidebar .menu .menu-item.dropdown:hover ul{
+    display: block;
+}
+.sidebar .menu .menu-item.dropdown:hover > a::before{
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.sidebar .logout{
+    padding: .5rem 1rem;
+    border-top: .1px solid #9d9d9e;;
+}
+
+/* header */
+main{
+    /* width: 100%; */
+    background-color: #f3f6fe;
+    margin-left: 218px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: .6rem 2rem;
+}
+header .left .menu{
+    display: flex;
+    gap: 2rem;
+}
+header .left .menu li{
+    display: flex;
+    align-items: center;
+}
+header .left .search{
+    position: relative;
+}
+header .left .search i{
+    position: absolute;
+    top: 7px;
+    left: 10px;
+}
+header .left .search input{
+    outline: none;
+    border: none;
+    background-color: #f2f2f2;
+    padding: .4rem 1rem;
+    padding-left: 2rem;
+    border-radius: 25px;
+}
+
+header .right .menu{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+header .right .avatar img{
+    width: 40px;
+    height: 40px;
+}
+header .right .item{
+    position: relative;
+}
+header .right .item .badge{
+    position: absolute;
+    background-color: #f56c89;
+    color: #fff;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 0.7rem;
+    right: -11px;
+    top: -5px;
+}
+
+/* breadcumb */
+.breadcumb{
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: space-between; */
+    /* background-color: #ffffff; */
+    padding: .6rem 2rem;
+}
+.breadcumb-list{
+    display: flex;
+
+}
+.breadcumb-list a{
+    position: relative;
+    padding: 0 1rem;
+}
+.breadcumb-list a:hover, .breadcumb-list a.active{
+    color: #1348fc;
+}
+.breadcumb-list i{
+    position: absolute;
+    transform: rotate(45deg);
+    bottom: -.4rem;
+    right: 0;
+    font-size: 1.6rem;
+}
+
+/* content */
+main > .content{
+    padding: .6rem 2rem;
+}
+.content .ministat {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.content .ministat .item{
+    background-color: #fff;
+    padding: .4rem .6rem;
+    border: solid 1px #e2e8f0;
+    border-radius: 15px;
+}
+.content .item .top{
+    display: flex;
+    justify-content: space-between;
+}
+.content .item .top .left{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.content .item .top .left img{
+    width: 30px;
+    height: 30px;
+}
+.content .item .top .left h4{
+    font-weight: 700;
+}
+.content .item .top .left p{
+    font-weight: 300;
+    color: #64748b;
+    font-size: 0.8rem;
+}
+.content .item .top .right{
+    text-align: right;
+}
+.content .item .top .right p.down{
+    color: #b91c1c;
+    font-size: 0.8rem;
+}
+.content .item .top .right p.up{
+    color: #16a34a;
+    font-size: 0.8rem;
+}
+.content .item .bottom{
+    height: 100px;
+    width: 100%;
+
+}
+
+.content .bigstat{
+    display: flex;
+    border-radius: 15px;
+    border: solid 1px #e2e8f0;
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+.content .bigstat .charts{
+    flex: 3;
+    background-color: #fff;
+}
+.content .bigstat .charts .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+}
+.content .bigstat .charts .header > div{
+    display: flex;
+}
+.content .bigstat .charts .header > div p{
+    margin-top: .7rem;
+    margin-left: 0.5rem;
+    color: #64748b;
+
+}
+.content .bigstat .charts .header a{
+    border-radius: 4px;
+    background: linear-gradient(75deg, #0043FF 25.69%, #A370F1 105.3%);
+    padding: .2rem 1.6rem;
+    color: #fff;
+    font-weight: 700;
+}
+.content .bigstat .charts .sub-header{
+    background-color: #FAFBFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.6rem 1rem;
+}
+.content .bigstat .charts .sub-header .one{
+    display: flex;
+}
+.content .bigstat .charts .sub-header .one p{
+    margin-top: 1.3rem;
+    margin-left: 0.4rem;
+    color: #b91c1c;
+}
+.content .bigstat .charts .sub-header .datas{
+    display: flex;
+    gap: 1rem;
+}
+.content .bigstat .charts .sub-header .datas p{
+    margin-top: .6rem;
+    font-weight: 300;
+    opacity: 0.4;
+}
+.content .bigstat .charts .sub-header .alert i{
+    color: #130EAD;
+    border: 1px solid #130EAD;
+    padding: 5px;
+    border-radius: 35px;
+}
+
+.content .bigstat .charts .chart{
+    height: 300px;
+    width: 100%;
+}
+
+
+.content .bigstat .marketcap{
+    flex: 1;
+    background-color: #fff;
+    border-left: solid 1px #e2e8f0;
+}
+.content .bigstat .marketcap .header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .84rem 1rem;
+    border-bottom: solid 1px #e2e8f0;
+}
+.content .bigstat .marketcap ul {
+    max-height: 360px;
+    overflow-y: scroll;
+}
+.content .bigstat .marketcap ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.78rem 1rem;
+    border-bottom: solid 1px #e2e8f0;
+}
+.content .bigstat .marketcap ul li:first-of-type{
+    background-color: #FAFBFF;
+}
+.content .bigstat .marketcap ul li .left{
+    display: flex;
+    gap: 0.6rem;
+}
+.content .bigstat .marketcap ul li img{
+    height: 30px;
+    width: 30px;
+}
+.content .bigstat .marketcap ul li .right{
+    display: flex;
+}
+.content .bigstat .marketcap ul li .right p {
+    margin-top: 1rem;
+}
+
+
+.content .other {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.8rem;
+}
+.content .other .activities{
+    background-color: #fff;
+    border-radius: 15px;
+    border: solid 1px #e2e8f0;
+}
+.content .other .activities .head{
+    padding: .6rem 2rem;
+}
+.content .other .activities .head ul{
+    display: flex;
+    gap: 0.6rem;
+}
+.content .other .activities .head ul li{
+    opacity: 0.4;
+    position: relative;
+}
+.content .other .activities .head ul li:hover, .content .other .activities .head ul li.active{
+    opacity: 1;
+}
+.content .other .activities .head ul li:hover::before, .content .other .activities .head ul li.active::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #0043FF;
+    bottom: -2px;
+}
+.content .other h2{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.content .other h2::before{
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 10px;
+    left: -16px;
+    background: linear-gradient(135deg, transparent 49%, #0043FF 50%, #A370F1 100%);
+}
+.content .activities table{
+    width: 100%;
+}
+.content .activities table thead{
+    border: 0.7px solid #DFE5F9;
+    background: #FAFBFF;
+    text-align: left;
+}
+.content .activities table thead th{
+    padding: .6rem 1rem;
+
+}
+.content .activities table td{
+    padding: .6rem 1rem;
+}
+
+.content .other .newsfeed{
+    background-color: #fff;
+    border-radius: 15px;
+    border: solid 1px #e2e8f0;
+    padding: .6rem 2rem;
+    margin-bottom: 1rem;
+}
+.content .other .newsfeed .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.content .other .newsfeed .head a{
+    border-radius: 8px;
+    border: 0.7px solid #DFE5F9;
+    padding: .6rem 1rem;
+}
+.content .other .newsfeed .news{
+    border-radius: 12px;
+    border: 0.7px solid #DFE5F9;
+    background: #FFF;
+    padding: .4rem 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.content .other .newsfeed .news .text{
+    margin-right: 120px;
+}
+.content .newsfeed .text h5{
+    font-size: 0.7rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+.content .newsfeed .text p{
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+.content .newsfeed .text span{
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+.content .other .newsfeed .news::after{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(135deg, transparent 49%, #0043FF 50%, #A370F1 100%);
+    
+}
+.content .other .newsfeed .news .tag{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    z-index: 11;
+    color: #fff;
+}
